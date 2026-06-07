@@ -41,3 +41,13 @@ An interactive, responsive, and modern-looking virtual drum kit built using sema
 ---
 
 ## 📂 Estrutura do Projeto / Project Structure
+├── drum.html    # Estrutura semântica e elementos de áudio / Markup and media sources
+├── style.css    # Estilização completa e efeitos neon / Layout design and neon lighting
+└── drum.js      # Lógica de controle de eventos e animações / Event listening logic
+
+## 💻 Como Executar / How to Run
+
+1. Abra o arquivo `drum.html` diretamente em qualquer navegador moderno (Chrome, Firefox, Edge, Safari).
+2. Clique em qualquer lugar da página para focar e comece a tocar pressionando as teclas **A, S, D, F, G, H, J, K ou L** do seu teclado!
+1. Open the `drum.html` file in any modern web browser.
+2. Click anywhere on the webpage to focus and start playing by hitting the **A, S, D, F, G, H,
