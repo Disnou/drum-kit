@@ -1,0 +1,77 @@
+/* Reseta margens e define a fonte */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Configura o fundo com a imagem da plateia em preto e branco */
+body {
+    background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1974&auto=format&fit=crop') center center / cover no-repeat;
+    /* Aplica o efeito preto e branco igual ao do vídeo */
+    filter: grayscale(100%); 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container das teclas */
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espaço entre os botões */
+}
+
+/* Estilo padrão de cada botão da bateria */
+.key {
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.07s ease; /* Exatamente o tempo que apareceu no seu console (0.07s) */
+    width: 60px;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 5px black;
+}
+
+/* Estilo da Letra (A, S, D...) */
+.key kbd {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Estilo do nome do som embaixo da letra */
+.sound {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffc600; /* Tom amarelo dourado do vídeo */
+}
+
+/* EFEITO QUANDO A TECLA É PRESSIONADA (Ativado pelo JavaScript) */
+.playing {
+    transform: scale(1.1); /* Dá um leve zoom/pulinho na tecla */
+    border-color: #ffc600; /* Borda fica amarela */
+    box-shadow: 0 0 15px #ffc600; /* Brilho amarelo ao redor */
+}
+/* Estilo da mensagem de instrução */
+.instrucao {
+    position: absolute;
+    top: 5%; /* Distância do topo da tela */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza perfeitamente no meio da tela */
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px #ffc600; /* Um leve brilho amarelo para combinar */
+    width: 90%; /* Garante que fica bom no celular também */
+    z-index: 10; /* Garante que o texto fica na frente do fundo */
+}
